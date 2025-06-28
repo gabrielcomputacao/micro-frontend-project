@@ -1,5 +1,12 @@
+import "./clean.css";
+import ListCards from "./components/listCards/ListCards";
+
 function App() {
-  return <>Card</>;
+  return (
+    <div>
+      <ListCards />
+    </div>
+  );
 }
 
 export default App;

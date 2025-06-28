@@ -24,6 +24,13 @@ export default defineConfig({
           entryGlobalName: "header",
           shareScope: "default",
         },
+        footer: {
+          type: "module",
+          name: "footer",
+          entry: "http://localhost:5172/remoteEntry.js",
+          entryGlobalName: "footer",
+          shareScope: "default",
+        },
       },
       shared: {
         react: {

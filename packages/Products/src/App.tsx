@@ -1,14 +1,21 @@
-import React from "react";
+import React, { Suspense } from "react";
 
-const RemoteButton = React.lazy(() => import("cards/App"));
+const Cards = React.lazy(() => import("cards/ListCards"));
 const Header = React.lazy(() => import("header/Header"));
+const Footer = React.lazy(() => import("footer/Footer"));
 
 function App() {
   return (
     <div>
-      <Header />
-      <div>Products</div>
-      <RemoteButton />
+      <Suspense fallback={"Carregando Header"}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={"Carregando Cards"}>
+        <Cards />
+      </Suspense>
+      <Suspense fallback={"Carregando Footer"}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
