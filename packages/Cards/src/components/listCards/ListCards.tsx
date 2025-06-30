@@ -25,7 +25,7 @@ export default function ListCards() {
       <div className="content_cards">
         {products.map((value: Product) => (
           <Card
-            key={value.id}
+            key={`${value.id}-${value.price}`}
             brand={value.brand}
             title={value.title}
             price={value.price}

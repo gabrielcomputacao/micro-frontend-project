@@ -26,7 +26,7 @@ export function Card({ img, price, title, brand, product }: ICardProps) {
         <p>{title}</p>
         <p>{brand}</p>
         <p>{price}</p>
-        <button onClick={() => addItemToCart(product)}>
+        <button id="addInCart" onClick={() => addItemToCart(product)}>
           Adicionar no carrinho
         </button>
       </div>

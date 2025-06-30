@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    width: 100%;
 }
 
 .item_cart{
@@ -12,10 +13,10 @@
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 100%;
     border: 1px solid #fff;
-    padding: 5px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -23,5 +24,4 @@
 .button_close{
     all: unset;
     cursor: pointer;
-
 }

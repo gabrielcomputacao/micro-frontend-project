@@ -37,6 +37,7 @@
 .content-card div p{
     text-align: center;
     font-size: 24px;
+    margin: 0;
 }
 
 .content-card div button{

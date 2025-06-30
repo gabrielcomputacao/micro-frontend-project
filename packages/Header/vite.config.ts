@@ -36,7 +36,12 @@ export default defineConfig({
       },
     }),
   ],
-  css: {
-    postcss: "./postcss.config.js",
+  build: {
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false, // Importante!
+    rollupOptions: {
+      external: ["react", "react-dom"],
+    },
   },
 });
