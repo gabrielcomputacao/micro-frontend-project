@@ -1,0 +1,27 @@
+
+.container_listCart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.item_cart{
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button_close{
+    all: unset;
+    cursor: pointer;
+
+}

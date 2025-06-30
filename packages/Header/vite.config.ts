@@ -11,6 +11,15 @@ export default defineConfig({
       exposes: {
         "./Header": "./src/components/header/Header.tsx",
       },
+      remotes: {
+        projects: {
+          type: "module",
+          name: "projects",
+          entry: "http://localhost:5173/remoteEntry.js",
+          entryGlobalName: "projects",
+          shareScope: "default",
+        },
+      },
       shared: {
         react: {
           singleton: true,
@@ -19,6 +28,10 @@ export default defineConfig({
         "react-dom": {
           singleton: true,
           version: "^19.1.0",
+        },
+        zustand: {
+          singleton: true,
+          version: "^5.0.6",
         },
       },
     }),

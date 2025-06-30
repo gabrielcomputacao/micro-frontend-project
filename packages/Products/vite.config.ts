@@ -32,6 +32,9 @@ export default defineConfig({
           shareScope: "default",
         },
       },
+      exposes: {
+        "./StoreProducts": "./src/store/selectedItemsStore.ts",
+      },
       shared: {
         react: {
           singleton: true,
@@ -40,6 +43,10 @@ export default defineConfig({
         "react-dom": {
           singleton: true,
           version: "^19.1.0",
+        },
+        zustand: {
+          singleton: true,
+          version: "^5.0.6",
         },
       },
     }),

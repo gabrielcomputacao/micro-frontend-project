@@ -21,6 +21,10 @@ export default defineConfig({
           singleton: true,
           version: "^19.1.0",
         },
+        zustand: {
+          singleton: true,
+          version: "^5.0.6",
+        },
       },
     }),
   ],
